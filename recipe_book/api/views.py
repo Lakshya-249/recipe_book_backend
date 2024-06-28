@@ -127,7 +127,7 @@ class CategoryView(viewsets.ModelViewSet):
         name = request.query_params.get("name",None)
         if name is not None:
             category = Category.objects.filter(name=name)
-            if(len(category) == 0 and name in ["Recent_Dishes","More_by_Online_Kitchen"]):
+            if(len(category) == 0 and name in ["Recent_Dishes","More_by_Online_Kitchen","Specials"]):
                 nres = Recipe.objects.all().order_by('-recipe_id')[:6]
                 serializer = RecipeSerializer(nres,many=True,context={'request':request})
                 return Response(serializer.data,status=200)
