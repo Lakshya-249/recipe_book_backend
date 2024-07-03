@@ -84,10 +84,10 @@ WSGI_APPLICATION = 'recipe_book.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'initial_db',
-        'USER': 'postgres',
-        'PASSWORD': 'lakshya123',
-        'HOST': 'lakshya-db-instance.c9qcokmw01is.eu-north-1.rds.amazonaws.com',  # Replace with your PostgreSQL server's address if necessary
+        'NAME': 'mynewdb_ae1a',
+        'USER': 'mynewdb_ae1a_user',
+        'PASSWORD': 'v6520wMSN5Pe0a7zkELhaTwRoFRjwteS',
+        'HOST': 'dpg-cq29ndl6l47c73b20mkg-a',  # Replace with your PostgreSQL server's address if necessary
         'PORT': '5432',          # Leave empty to use the default PostgreSQL port (usually 5432)
     }
 }
